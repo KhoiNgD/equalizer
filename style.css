@@ -27,23 +27,142 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: #fcfaf9;
+  --dark: #191826;
+  --orange: #fa7453;
+  --yellow: #feb964;
+  --blue-sky: #66e2dc;
+  --border: 12px;
+}
+
 html,
 body {
   height: 100%;
-}
-
-html {
-  font-size: 10px;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "IBMPlexSans", sans-serif;
-  padding: 0 48px;
+  padding: 0 144px;
   background-image: url("assets/bg-main-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.bg-pattern-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.main-text {
+  max-width: 750px;
+  padding: 48px;
+  padding-right: 32px;
+  padding-left: 0;
+}
+
+.main-header {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+.main-content {
+  font-size: 24px;
+}
+
+.feature {
+  display: flex;
+
+  background-color: var(--dark);
+  background-image: url("assets/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-position: 45% 10%;
+}
+
+.card {
+  /* TODO: Remove width */
+  width: 445px;
+  color: #fcfaf9;
+  background-color: #fa7453;
+  border: 12px;
+  padding: 48px 32px;
+  margin-left: 55%;
+  margin-top: 96px;
+}
+
+.card-header {
+  margin-top: 10px;
+  font-size: 48px;
+}
+
+.card-content {
+  font-size: 24px;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 64px;
+  font-weight: 700;
+  margin-right: 16px;
+}
+
+.card-btns {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  border-radius: var(--border);
+  outline: none;
+  border: none;
+}
+
+.btn-logo {
+  margin-right: 8px;
+}
+
+.btn-ios {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.btn-ios img {
+  transform: translateY(-1.5px);
+}
+
+.btn-android {
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 @media (max-width: 1500px) {
