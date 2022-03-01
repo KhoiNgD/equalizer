@@ -61,6 +61,8 @@ svg {
 }
 
 .bg-pattern-1 {
+  height: 320px;
+
   position: absolute;
   top: 0;
   right: 0;
@@ -91,11 +93,21 @@ header {
 
 .feature {
   display: flex;
+  justify-content: space-around;
+  border: 1px solid var(--dark);
+  border-radius: var(--border);
+  margin-top: 296px;
+  margin-bottom: 96px;
 
   background-color: var(--dark);
   background-image: url("assets/bg-pattern-2.svg");
   background-repeat: no-repeat;
   background-position: 45% 10%;
+}
+
+.feature-img {
+  height: 600px;
+  transform: translateY(-35%);
 }
 
 .card {
@@ -104,9 +116,9 @@ header {
   color: #fcfaf9;
   background-color: #fa7453;
   border: 12px;
+  border-radius: var(--border);
   padding: 48px 32px;
-  margin-left: 55%;
-  margin-top: 96px;
+  transform: translateY(96px);
 }
 
 .card-header {
@@ -163,6 +175,31 @@ header {
 .btn-android {
   background-color: var(--white);
   color: var(--dark);
+}
+
+.footer {
+  display: flex;
+  padding: 96px 0;
+}
+
+.footer-logo {
+  margin-right: 128px;
+}
+
+.footer-contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 350px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
 }
 
 @media (max-width: 1500px) {
