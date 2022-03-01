@@ -157,6 +157,7 @@ header {
   border-radius: var(--border);
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .btn-logo {
@@ -168,6 +169,10 @@ header {
   color: var(--white);
 }
 
+.btn-ios:hover {
+  background-color: var(--blue-sky);
+}
+
 .btn-ios img {
   transform: translateY(-1.5px);
 }
@@ -175,6 +180,10 @@ header {
 .btn-android {
   background-color: var(--white);
   color: var(--dark);
+}
+
+.btn-android:hover {
+  background-color: var(--yellow);
 }
 
 .footer {
@@ -200,6 +209,11 @@ header {
 .footer-icons {
   display: flex;
   gap: 16px;
+}
+
+.svg-icon:hover > svg path {
+  cursor: pointer;
+  fill: var(--orange);
 }
 
 @media (max-width: 1500px) {
