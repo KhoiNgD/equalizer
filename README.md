@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Visit](https://github.com/KhoiNgD/equalizer)
-- Live Site URL: Not Yet
+- Live Site URL: [Visit](https://khoind-equalizer.netlify.app/)
 
 ## My process
 
